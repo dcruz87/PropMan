@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.13" />
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="NuGet.Core" Version="2.14.0" />
+    <PackageReference Include="jQuery" Version="3.3.1" />
+    <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.2" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.109.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Home\EmptyCSSFile.css" />
+    <None Remove="Views\Home\Registration.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\images\profile.jpeg" />
+    <Content Remove="wwwroot\images\maintenance.jpg" />
+    <Content Remove="wwwroot\images\billpay.jpeg" />
+    <Content Remove="wwwroot\images\bulletin.jpg" />
+    <Content Remove="wwwroot\images\staff.jpg" />
+    <Content Remove="wwwroot\images\Things-to-do.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\profile.jpeg" />
+    <None Include="wwwroot\images\maintenance.jpg" />
+    <None Include="wwwroot\images\billpay.jpeg" />
+    <None Include="wwwroot\images\bulletin.jpg" />
+    <None Include="wwwroot\images\staff.jpg" />
+    <None Include="wwwroot\images\Things-to-do.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Home\Index.cshtml.cs" />
+  </ItemGroup>
+</Project>
